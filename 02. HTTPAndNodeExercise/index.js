@@ -1,5 +1,4 @@
 const assert = require('assert');
-const fs = require('fs');
 let storage = require('./storage').database;
 
 describe('Test storage functionality', () => {
