@@ -1,0 +1,15 @@
+{
+  "name": "http-node-exercise",
+  "version": "0.0.1",
+  "description": "This is an http and node.js exercise",
+  "main": "storage.js",
+  "engine": "7.10.0",
+  "scripts": {
+    "start": "node storage.js"
+  },
+  "author": "GS",
+  "license": "MIT",
+  "dependencies": {
+    "mocha": "3.4.1"
+  }
+}
