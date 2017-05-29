@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../content/styles/styles.css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li>
+                <a href="{back}">Go Back</a>
+            </li>
+
+            <li>
+                <a href="/">Home</a>
+            </li>
+
+            <li>
+                <a href="/image/add">Add Image</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h2 class="form-title">Upload Image</h2>
+
+    <form enctype="multipart/form-data" method="POST">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+        </div>
+
+        <div class="form-group">
+            <label for="url">Image:</label>
+            <input type="file" id="url" name="url">
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Add Image" class="submit-btn">
+        </div>
+    </form>
+</main>
+</body>
+</html>
