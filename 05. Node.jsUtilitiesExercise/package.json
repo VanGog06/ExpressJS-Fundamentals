@@ -1,0 +1,24 @@
+{
+  "name": "node.js-utilities-exercise",
+  "version": "0.0.1",
+  "description": "This is the exercis for node.js utilities lecture",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node.js",
+    "utilities",
+    "exercise"
+  ],
+  "engines": {
+    "node": "7.10.0",
+    "npm": "4.2.0"
+  },
+  "author": "GS",
+  "license": "MIT",
+  "dependencies": {
+    "formidable": "1.1.1",
+    "shortid": "2.2.8"
+  }
+}
