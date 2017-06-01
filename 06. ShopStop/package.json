@@ -1,0 +1,24 @@
+{
+  "name": "shop-stop",
+  "version": "0.0.1",
+  "description": "This is the project made during the ExpressJS course in SoftUni",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "expressjs",
+    "stop",
+    "shop"
+  ],
+  "author": "GS",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "3.9.1",
+    "gulp-clean-css": "3.4.0",
+    "gulp-rename": "1.2.2",
+    "mongoose": "4.10.3",
+    "multiparty": "4.1.3",
+    "shortid": "2.2.8"
+  }
+}
