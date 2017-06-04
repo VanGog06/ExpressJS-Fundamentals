@@ -1,0 +1,19 @@
+{
+  "name": "mongodb-mongoose-exercise",
+  "version": "0.0.1",
+  "description": "mongodb and mongoose exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mongodb",
+    "mongoose",
+    "exercise"
+  ],
+  "author": "GS",
+  "license": "MIT",
+  "dependencies": {
+    "mongoose": "4.10.4"
+  }
+}
