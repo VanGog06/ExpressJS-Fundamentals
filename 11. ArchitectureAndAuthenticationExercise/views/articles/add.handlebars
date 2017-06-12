@@ -1,0 +1,16 @@
+<form action="/article/add" method="POST">
+  <div class="form-item">
+    <label for="article-title">Title:</label>
+    <input id="article-title" type="text" name="title" value="{{reqArticle.title}}"/>
+  </div>
+
+  <div class="form-item">
+    <label for="article-description">Description:</label>
+    <textarea id="article-description" name="description" id="description" cols="30"
+              rows="5">{{reqArticle.description}}</textarea>
+  </div>
+
+  <div class="form-item">
+    <input type="submit" value="Create"/>
+  </div>
+</form>
