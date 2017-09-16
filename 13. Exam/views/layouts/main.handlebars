@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Cool Blog System</title>
+  <link href="/css/site.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+  <ul class="menu">
+    <li>
+      <a href="/">Home</a>
+    </li>
+
+    <li></li>
+    {{#if currentUser}}
+        <li><a href="/users/block">Block/Unblock User</a></li>
+      <li>{{currentUser.username}}</li>
+      <li>
+        <form id="logout-form" action="/users/logout" method="POST"></form>
+        <a href="javascript:document.getElementById('logout-form').submit()">Logout</a>
+      </li>
+    {{else}}
+      <li><a href="/users/register">Register</a></li>
+      <li><a href="/users/login">Login</a></li>
+    {{/if}}
+  </ul>
+
+  {{#if globalError}}
+    <h3 class="globalError">{{globalError}}</h3>
+  {{/if}}
+  {{#if successMessage}}
+    <h3 class="successMessage">{{successMessage}}</h3>
+  {{/if}}
+
+  {{{body}}}
+</div>
+</body>
+</html>

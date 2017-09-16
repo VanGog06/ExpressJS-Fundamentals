@@ -1,0 +1,43 @@
+{{#if currentUser}}
+  <form class="search-form" action="/" method="post">
+    <div class="form-group">
+      <label for="username">Chat with:</label>
+      <input type="text" name="username" id="username" />
+    </div>
+
+    <div class="form-group">
+      <input type="submit" value="Chat" />
+    </div>
+  </form>
+
+  {{#if threads}}
+    {{#each threads}}
+      <div class="thread">
+        <h2>Thread between {{this.startedBy}} and {{this.with}}</h2>
+        {{#each this.messages}}
+          <div class="message">
+            {{#if this.isImage}}
+              <p><span class="{{this.isSender}}">{{this.sendBy}}</span>: <img src="{{this.message}}" alt="Picture" /></p>
+            {{else if this.isLink}}
+              <p><span class="{{this.isSender}}">{{this.sendBy}}</span>: <a href="{{this.message}}" target="_blank">{{this.message}}</a></p>
+            {{else}}
+              <p><span class="{{this.isSender}}">{{this.sendBy}}</span>: {{this.message}}</p>
+            {{/if}}
+            {{#if this.showLikeButtons}}
+              {{#if this.showLike}}
+                <a href="/like/{{this._id}}">Like</a>
+              {{else}}
+                <a href="/dislike/{{this._id}}">Dislike</a>
+              {{/if}}
+              <span>{{this.likedNumber}}</span>
+            {{/if}}
+          </div>
+        {{/each}}
+      </div>
+    {{/each}}
+  {{else}}
+    <h3>There are currently no active threads for this user!</h3>
+  {{/if}}
+{{else}}
+  <h1>Welcome to Messenger!</h1>
+{{/if}}
